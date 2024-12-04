@@ -1,8 +1,16 @@
 /* Diagnostic Styling */
-* {
+/* * {
     outline: 1px dotted gray;
+} */
+
+[data-theme] {
+    background-color: #111823;
 }
 
-body {
-    background: rebeccapurple;
+h1 {
+    color: #ff4654;
+}
+
+.card-gradient {
+    background: linear-gradient( #ba3a46, #111823); /* Change the colors as needed */
 }
