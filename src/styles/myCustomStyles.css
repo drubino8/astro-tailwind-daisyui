@@ -18,6 +18,18 @@ h1 {
     background: linear-gradient( #ba3a46, #111823); /* Change the colors as needed */
 }
 
+.card-gradient p {
+    color: #c6c6c6;
+}
+
+.card-gradient h2 {
+    color: white;
+}
+
 #ded3520f-4264-bfed-162d-b080e2abccf9 {
     display: none;
+}
+
+.badge-outline {
+    color: #c6c6c6;
 }
