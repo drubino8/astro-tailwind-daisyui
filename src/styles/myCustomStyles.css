@@ -9,8 +9,15 @@
 
 h1 {
     color: #ff4654;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 .card-gradient {
     background: linear-gradient( #ba3a46, #111823); /* Change the colors as needed */
+}
+
+#ded3520f-4264-bfed-162d-b080e2abccf9 {
+    display: none;
 }

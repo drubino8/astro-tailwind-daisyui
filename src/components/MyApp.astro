@@ -8,23 +8,23 @@ const valAgents = await response.json();
 <div class="flex flex-wrap gap-4 m-8">
   {
     valAgents.data.map(agent => 
-      <div class="card card-gradient w-96 shadow-xl">
+      <div class="card card-gradient w-96 shadow-xl mx-auto" id={agent.uuid}>
         <figure>
           <img
-            src={agent.fullPortrait}
-            alt={agent.displayName} />
+        src={agent.fullPortrait}
+        alt={agent.displayName} />
         </figure>
-        <div class="card-body">
+        <div class={"card-body"}>
           <h2 class="card-title">
-            {agent.displayName}
-            <div class="badge badge-secondary">{agent.role}</div>
+        {agent.displayName}
+        {agent.role && <div class="badge badge-secondary">{agent.role.displayName}</div>}
           </h2>
           <p>{agent.description}</p>
           <div class="card-actions justify-end">
-            <div class="badge badge-outline">{agent.abilities[0].displayName}</div>
-            <div class="badge badge-outline">{agent.abilities[1].displayName}</div>
-            <div class="badge badge-outline badge-secondary">{agent.abilities[2].displayName}</div>
-            <div class="badge badge-outline badge-primary">{agent.abilities[3].displayName}</div>
+        <div class="badge badge-outline">{agent.abilities[0].displayName}</div>
+        <div class="badge badge-outline">{agent.abilities[1].displayName}</div>
+        <div class="badge badge-outline badge-secondary">{agent.abilities[2].displayName}</div>
+        <div class="badge badge-outline badge-primary">{agent.abilities[3].displayName}</div>
           </div>
         </div>
       </div>
